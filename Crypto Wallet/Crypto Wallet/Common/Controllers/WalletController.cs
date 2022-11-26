@@ -8,9 +8,6 @@ using System.Threading.Tasks;
 namespace Crypto_Wallet.Common.Controllers
 {
 
-  
-
-  
     public interface IWalletController
     {
         Task<List<Coin>> GetCoins(bool forceReload = false);
@@ -29,14 +26,14 @@ namespace Crypto_Wallet.Common.Controllers
                     Name = "Bitcoin",
                     Amount = 1,
                     Symbol = "BTC",
-                    DollarValue = 9500
+                    DollarValue = 15679
                 },
                 new Coin
                 {
                     Name = "Ethereum",
                     Amount = 2,
                     Symbol = "ETH",
-                    DollarValue = 300
+                    DollarValue = 1800
                 },
                 new Coin
                 {

@@ -28,7 +28,7 @@ namespace Crypto_Wallet.Modules.AddTransactions
             IsDeposit = true;
             TransactionDate = DateTime.Now;
             _amount = new ValidatableObject<decimal>();
-            _amount.Validations.Add(new NonNegativeRule { ValidationMessage = "Please Enter Amount Greater Than Zero" });
+            _amount.Validations.Add(new NonNegativeRule { ValidationMessage = "Por favor ponga un monto valido" });
         }
         private bool _isDeposit;
         public bool IsDeposit
@@ -85,7 +85,7 @@ namespace Crypto_Wallet.Modules.AddTransactions
 
             if (SelectedCoin == null)
             {
-                await _dialogMessage.DisplayAlert("Error", "Please Select a Coin", "OK");
+                await _dialogMessage.DisplayAlert("Error", "Por favor seleccione una Moneda", "OK");
                 return;
             }
             IsBusy = true;

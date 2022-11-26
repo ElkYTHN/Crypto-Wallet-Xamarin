@@ -11,21 +11,21 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Transaction Type"
+            <Label Text="Tipo de Transaccion"
                    Padding="10,16,10,0"
                    TextColor="Black"
                    />
-            <RadioButton Content="Deposit" 
+            <RadioButton Content="Deposito" 
                          IsChecked="{Binding IsDeposit}"
                          Margin="16,0,0,0"
                          TextColor="{StaticResource PrimaryBlue}"/>
             
-            <RadioButton Content="Withdrawn"
+            <RadioButton Content="Retiro"
                          IsChecked="{Binding IsDeposit , Converter={StaticResource InverseBoolConverter} ,Mode=OneWay}"
                          Margin="16,0,0,0"
                          TextColor="{StaticResource PrimaryBlue}"/>
             
-            <Label Text="Select Assets"
+            <Label Text="Tipos de Moneda"
                    Padding="10,10,10,0"
                     TextColor="Black"/>
             
@@ -36,13 +36,13 @@
                             SelectedItem="{Binding SelectedCoin}"
                             ItemTemplate="{StaticResource CoinCell}"/>
             
-            <Label Text="Amount"
+            <Label Text="Cantidad"
                    Margin="16,0,16,0"
                     TextColor="Black"/>
             
             <Entry Style="{StaticResource Input}"
                    Text="{Binding Amount.Value , Mode=TwoWay}"
-                   Placeholder="Enter Amount"
+                   Placeholder="Cantidad a Depositar"
                    Keyboard="Numeric"
                    Margin="16,0,16,0"
                    HeightRequest="50"
@@ -53,7 +53,7 @@
                    Margin="16,0,24,0"
                    />
             
-            <Label Text="Transaction Date"
+            <Label Text="Fecha"
                    Margin="16,0,24,0" 
                    TextColor="Black"/>
             
@@ -64,7 +64,7 @@
             <Button Style="{StaticResource BlueButton}" 
                     Margin="20"
                     WidthRequest="240"
-                    Text="Add"
+                    Text="Añadir"
                     Command="{Binding AddTransactionCommand}"/>
 
         </StackLayout>    

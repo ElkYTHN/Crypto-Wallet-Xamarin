@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Title="Salman Naveed Khan" xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage Title="Grupo 4" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Crypto_Wallet.Modules.Wallet.WalletView"
              xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms">
@@ -10,7 +10,7 @@
                 <StackLayout Padding="0,20,0,0">
 
                     <!-- Chart -->
-                    <Label Text="{Binding PortfolioValue, StringFormat='Balane: {0:N2}$'}" 
+                    <Label Text="{Binding PortfolioValue, StringFormat='Balance: {0:N2}$'}" 
                        TextColor="{StaticResource PrimaryBlue}"
                        HorizontalOptions="Center"
                        FontSize="22"/>
@@ -24,7 +24,7 @@
                              VerticalOptions="FillAndExpand">
 
                         <!-- Top Assets -->
-                        <Label Text="Top Assets"
+                        <Label Text="Mejores Monedas"
                            FontAttributes="Bold"
                            TextColor="{StaticResource InputText}"
                            Margin="20,20,0,0"/>
@@ -37,7 +37,7 @@
                                     VerticalScrollBarVisibility="Never"/>
 
                         <!-- Latest Transactions -->
-                        <Label Text="Latest Transactions"
+                        <Label Text="Ultimas Transacciones"
                            FontAttributes="Bold"
                            TextColor="{StaticResource InputText}"
                            Margin="20,15,0,0"/>
@@ -57,7 +57,7 @@
                                        Aspect="AspectFill"
                                        VerticalOptions="Center"
                                        HorizontalOptions="Center"/>
-                                    <Button Text="No Transactions... Create one now"
+                                    <Button Text="No hay Operaciones, Crear Una"
                                         Style="{StaticResource NoBackgroundSmallButton}"
                                         Command="{Binding AddNewTransactionCommand}"
                                         FontSize="17"
