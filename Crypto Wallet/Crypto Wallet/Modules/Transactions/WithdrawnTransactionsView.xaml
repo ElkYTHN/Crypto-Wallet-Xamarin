@@ -17,6 +17,8 @@
                             ItemTemplate="{StaticResource TransactionCell}"
                             SelectedItem="{Binding SelectedTransaction}"
                             SelectionChangedCommand="{Binding TransactionSelectedCommand}">
+                
+                
 
             </CollectionView>
         </RefreshView>
